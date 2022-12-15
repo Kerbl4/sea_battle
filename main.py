@@ -1,3 +1,14 @@
+class BoardOutException(Exception):
+    def __str__(self):
+        return "You are firing out of the board!"
+
+class SamePointException(Exception):
+    def __str__(self):
+        return "You've already fired the board!"
+
+class ShipOutOfBoard(Exception):
+    def __str__(self):
+        return "The ship is placed out of the board"
 
 
 class Board:
